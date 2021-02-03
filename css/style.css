@@ -180,6 +180,7 @@ html {
 	--theme-color-3: #25aef6;
 	--theme-color-4: #a7c0e2;
 	--theme-color-5: #afb9dd;
+	--theme-color-6: #16395b;
 	--box-sh-theme: 0px 15px 20px hsla(161, 64%, 51%, 0.5);
 }
 body {
@@ -266,7 +267,7 @@ input {
 	width: 155px;
 	height: auto;
 }
-.header__form {
+.header__search {
 	border: 1px solid #d2e1f5;
 	border-radius: 4px;
 	display: inline-flex;
@@ -275,15 +276,46 @@ input {
 	padding: 7px 9px;
 	width: 389px;
 }
-.header__form input[type="search"] {
+.header__search input[type="search"] {
 	flex-grow: 1;
 	border: none;
 }
-.header__form input[type="button"] {
+.header__search input[type="button"] {
 	margin-left: 10px;
 }
-.header__form input[type="search"]::placeholder {
+.header__search input[type="search"]::placeholder {
 	color: var(--theme-color-4);
+}
+.header__nav {
+	display: flex;
+	align-items: center;
+}
+.header__burger {
+	color: var(--theme-color-6);
+	display: flex;
+	align-items: center;
+}
+.navbar__button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 24px;
+	width: 24px;
+	background-color: transparent;
+	border: none;
+}
+.navbar__button:focus {
+	outline: none;
+	/* border: 3px solid var(--theme-color); */
+}
+.navbar__button span {
+	height: 3px;
+	width: 25px;
+	background-color: var(--theme-color-6);
+}
+.navbar__button span:nth-of-type(n + 2) {
+	margin-top: 4px;
 }
 /*TODO=================HEADER END===================*/
 /* Desktop first method
