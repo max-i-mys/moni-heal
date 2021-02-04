@@ -1,4 +1,4 @@
-/*TODO================FONTS STYLE START=================*/
+/*TODO================ FONTS STYLE START =================*/
 @font-face {
 	font-family: "Avenir Next";
 	src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2");
@@ -34,8 +34,8 @@
 	font-style: normal;
 	font-display: swap;
 }
-/*TODO================FONTS STYLE END=================*/
-/*TODO================RESET STYLE START=================*/
+/*TODO================ FONTS STYLE END =================*/
+/*TODO================ RESET STYLE START =================*/
 html,
 body,
 div,
@@ -160,8 +160,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*TODO================RESET STYLE END=================*/
-/*TODO=================COMMON STYLES START===================*/
+/*TODO================ RESET STYLE END =================*/
+/*TODO================= COMMON STYLES START ===================*/
 *,
 ::before,
 ::after {
@@ -260,8 +260,8 @@ input {
 .tel {
 	transform: scale(1.3) translateX(-6px);
 }
-/*TODO=================COMMON STYLES END===================*/
-/*TODO=================HEADER START===================*/
+/*TODO================= COMMON STYLES END ===================*/
+/*TODO================= HEADER START ===================*/
 .header {
 	border-bottom: 1px solid #c0d3fe;
 	position: relative;
@@ -436,7 +436,38 @@ input {
 	border-bottom: 3px solid var(--theme-color-6);
 }
 /**================= nav-main end ===================*/
-/*TODO=================HEADER END===================*/
+/*TODO================= HEADER END ===================*/
+/**================= crumbs start ===================*/
+.crumbs {
+	padding: 33px 0;
+	font-size: 1.6rem;
+	font-weight: 300;
+	color: var(--theme-color-6);
+}
+.crumbs__lists {
+	display: flex;
+}
+.crumbs__lists li {
+	display: inline-flex;
+	align-items: center;
+}
+.crumbs__lists li:nth-last-of-type(n + 2):after {
+	content: "➝";
+	font-size: 1.8rem;
+	color: var(--dark);
+	margin: 0 15px;
+}
+.crumbs__link:hover,
+.crumbs__link:focus {
+	text-decoration: underline;
+}
+.crumbs__current {
+	color: var(--theme-color-4);
+}
+/**================= crumbs end ===================*/
+/*TODO================= MAIN START ===================*/
+
+/*TODO================= MAIN END ===================*/
 /* Desktop first method
 
 /* // XX-Large devices (larger desktops) */
