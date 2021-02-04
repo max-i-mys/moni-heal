@@ -239,7 +239,7 @@ input {
 .button-theme-1:hover,
 .button-theme-1:focus {
 	color: var(--theme-color);
-	background-color: var(--light);
+	background-color: transparent;
 }
 .button-theme-2 {
 	min-width: 135px;
@@ -252,10 +252,18 @@ input {
 	color: var(--light);
 	background-color: var(--theme-color-2);
 }
+.sub-logo {
+	width: 100px;
+	height: auto;
+}
+.tel {
+	transform: scale(1.3) translateX(-6px);
+}
 /*TODO=================COMMON STYLES END===================*/
 /*TODO=================HEADER START===================*/
 .header {
 	border-bottom: 1px solid #c0d3fe;
+	position: relative;
 }
 .header-container {
 	display: flex;
@@ -299,6 +307,7 @@ input {
 }
 .header__lang {
 	position: absolute;
+	z-index: 999;
 	left: -45%;
 	top: 0px;
 	height: 35px;
@@ -338,6 +347,14 @@ input {
 	display: flex;
 	align-items: center;
 }
+/* .header__burger:hover,
+.header__burger:focus {
+	color: var(--theme-color);
+} */
+.header__burger:hover .navbar__button span,
+.header__burger:focus .navbar__button span {
+	background-color: var(--theme-color);
+}
 .header__burger > span:first-of-type {
 	margin-right: 7px;
 }
@@ -362,6 +379,60 @@ input {
 .navbar__button span:nth-of-type(n + 2) {
 	margin-top: 4px;
 }
+/**================= nav-main start ===================*/
+.header__nav-main {
+	background-color: #e5eeff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 87px;
+	border-top: 1px solid #c0d3fe;
+	border-bottom: 1px solid #c0d3fe;
+	padding: 1px 0;
+	overflow: hidden;
+	transform: scaleY(0);
+	transform-origin: 0 0;
+}
+.header__nav-main.active {
+	transform: scaleY(1);
+	overflow: visible;
+}
+.nav-main-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__sub-logo {
+	position: relative;
+	width: 100px;
+}
+.header__sub-logo .sub-logo {
+	position: absolute;
+	top: -25px;
+}
+.header__menu {
+	display: inline-flex;
+	font-size: 2rem;
+}
+.menu__link {
+	padding: 24px 24px;
+	border-bottom: 3px solid #e5eeff;
+	border-top: 3px solid #e5eeff;
+}
+.menu__list:nth-last-of-type(n + 2):hover .menu__link,
+.menu__list.menu__link:nth-last-of-type(n + 2):focus {
+	color: var(--theme-color-2);
+	border-bottom: 3px solid var(--theme-color-2);
+}
+.menu__list:last-of-type {
+	margin-left: 15px;
+	color: var(--theme-color-6);
+}
+.menu__list:last-of-type:hover .menu__link,
+.menu__list:last-of-type:focus .menu__link {
+	border-bottom: 3px solid var(--theme-color-6);
+}
+/**================= nav-main end ===================*/
 /*TODO=================HEADER END===================*/
 /* Desktop first method
 
