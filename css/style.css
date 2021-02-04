@@ -437,6 +437,8 @@ input {
 }
 /**================= nav-main end ===================*/
 /*TODO================= HEADER END ===================*/
+
+/*TODO================= MAIN START ===================*/
 /**================= crumbs start ===================*/
 .crumbs {
 	padding: 33px 0;
@@ -464,8 +466,22 @@ input {
 .crumbs__current {
 	color: var(--theme-color-4);
 }
-/**================= crumbs end ===================*/
-/*TODO================= MAIN START ===================*/
+/**================= to-hosp start ===================*/
+.to-hosp-container {
+	display: flex;
+}
+.to-hosp__cont {
+	width: 50%;
+	background: linear-gradient(
+		130.14deg,
+		var(--theme-color-2) 45.98%,
+		var(--theme-color-3) 91.19%
+	);
+}
+.to-hosp__info {
+	width: 50%;
+}
+/**================= to-hosp end ===================*/
 
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
