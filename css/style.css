@@ -189,6 +189,7 @@ body {
 	font-size: 2rem;
 	background-color: var(--light);
 	color: var(--dark);
+	height: 10000px;
 }
 a,
 ::before,
@@ -347,10 +348,6 @@ input {
 	display: flex;
 	align-items: center;
 }
-/* .header__burger:hover,
-.header__burger:focus {
-	color: var(--theme-color);
-} */
 .header__burger:hover .navbar__button span,
 .header__burger:focus .navbar__button span {
 	background-color: var(--theme-color);
@@ -396,6 +393,12 @@ input {
 .header__nav-main.active {
 	transform: scaleY(1);
 	overflow: visible;
+}
+.header__nav-main.active-fixed {
+	transform: scaleY(1);
+	overflow: visible;
+	position: fixed;
+	top: 0;
 }
 .nav-main-container {
 	display: flex;

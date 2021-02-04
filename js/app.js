@@ -5,3 +5,15 @@ burgerBtn.onclick = function () {
 		burgerMenu.classList.remove("active");
 	}
 };
+
+window.onscroll = function showHeader() {
+	let header = document.querySelector("#burgerMenu");
+	if (window.pageYOffset > 100) {
+		burgerMenu.classList.remove("active");
+	}
+	if (window.pageYOffset > 300) {
+		burgerMenu.classList.add("active-fixed");
+	} else {
+		burgerMenu.classList.remove("active-fixed");
+	}
+};
