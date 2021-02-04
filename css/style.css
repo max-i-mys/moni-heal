@@ -288,13 +288,13 @@ input {
 .header__search input[type="search"]::placeholder {
 	color: var(--theme-color-4);
 }
-.header__nav {
+.header__nav-right {
 	display: flex;
 	align-items: center;
 	color: var(--theme-color-6);
 	position: relative;
 }
-.header__nav .button.button-theme-1 {
+.header__nav-right .button.button-theme-1 {
 	margin-right: 38px;
 }
 .header__lang {
@@ -305,20 +305,34 @@ input {
 	overflow: hidden;
 	background-color: var(--light);
 }
-.header__lang:hover {
+.header__lang:hover,
+.header__lang:focus-within {
 	height: 100px;
 	overflow: visible;
 	border: 1px solid var(--theme-color-6);
 }
-.lang__list {
-	padding: 7px;
+.lang__list:nth-of-type(n + 2) {
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: 0.4s;
+}
+.header__lang:hover .lang__list:nth-of-type(n + 2),
+.header__lang:focus-within .lang__list:nth-of-type(n + 2) {
+	transform: scaleY(1);
+}
+.lang__link {
+	padding: 8px;
 	display: flex;
 	align-items: baseline;
 }
-.lang__list i {
+.lang__link i {
 	font-size: 0.8rem;
 	color: var(--theme-color-6);
 	margin-left: 11px;
+}
+.lang__link:hover,
+.lang__link:focus {
+	color: var(--theme-color);
 }
 .header__burger {
 	display: flex;
