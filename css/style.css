@@ -166,7 +166,6 @@ table {
 ::before,
 ::after {
 	box-sizing: border-box;
-	transition: 0.3s;
 }
 html {
 	scroll-behavior: smooth;
@@ -205,8 +204,7 @@ button {
 	font: inherit;
 	color: inherit;
 }
-button,
-input {
+button {
 	cursor: pointer;
 }
 :focus {
@@ -229,13 +227,14 @@ input {
 	align-items: center;
 	justify-content: center;
 	font-size: 1.4rem;
-	padding: 10px;
 	border-radius: 2px;
+	transition: 0.3s;
 }
 .button-theme-1 {
 	color: var(--light);
 	background-color: var(--theme-color);
 	border: 1px solid var(--theme-color);
+	padding: 10px 18px;
 }
 .button-theme-1:hover,
 .button-theme-1:focus {
@@ -247,6 +246,7 @@ input {
 	color: var(--theme-color-2);
 	border: 1px solid var(--theme-color-2);
 	background-color: transparent;
+	padding: 10px 25px;
 }
 .button-theme-2:hover,
 .button-theme-2:focus {
@@ -301,39 +301,43 @@ input {
 	display: flex;
 	align-items: center;
 	color: var(--theme-color-6);
-	position: relative;
 }
 .header__nav-right .button.button-theme-1 {
 	margin-right: 38px;
 }
+.lang-container {
+	position: relative;
+	min-width: 75px;
+	margin-right: 30px;
+}
 .header__lang {
 	position: absolute;
 	z-index: 999;
-	left: -45%;
-	top: 0px;
-	height: 35px;
-	overflow: hidden;
-	background-color: var(--light);
+	top: -20px;
+	border: 1px solid transparent;
+	transition: 0.3s;
 }
 .header__lang:hover,
 .header__lang:focus-within {
-	height: 100px;
-	overflow: visible;
 	border: 1px solid var(--theme-color-6);
 }
-.lang__list:nth-of-type(n + 2) {
-	transform: scaleY(0);
-	transform-origin: 0 0;
-	transition: 0.4s;
+.lang__list:nth-of-type(n + 2) > .lang__link {
+	font-size: 0;
+	padding: 0;
 }
-.header__lang:hover .lang__list:nth-of-type(n + 2),
-.header__lang:focus-within .lang__list:nth-of-type(n + 2) {
-	transform: scaleY(1);
+.header__lang:hover .lang__list:nth-of-type(n + 2) .lang__link,
+.header__lang:focus-within .lang__list:nth-of-type(n + 2) .lang__link {
+	font-size: inherit;
+	background-color: var(--light);
+	padding: 10px;
 }
 .lang__link {
-	padding: 8px;
 	display: flex;
 	align-items: baseline;
+	transition: 0.3s;
+}
+.lang__link:only-child {
+	padding: 10px;
 }
 .lang__link i {
 	font-size: 0.8rem;
@@ -349,7 +353,7 @@ input {
 	align-items: center;
 }
 .header__burger:hover .navbar__button span,
-.header__burger:focus .navbar__button span {
+.header__burger:focus-within .navbar__button span {
 	background-color: var(--theme-color);
 }
 .header__burger > span:first-of-type {
@@ -364,14 +368,13 @@ input {
 	width: 24px;
 	background-color: transparent;
 	border: none;
-}
-.navbar__button:focus {
-	outline: none;
+	transition: 0.3s;
 }
 .navbar__button span {
 	height: 3px;
 	width: 25px;
 	background-color: var(--theme-color-6);
+	transition: 0.3s;
 }
 .navbar__button span:nth-of-type(n + 2) {
 	margin-top: 4px;
@@ -389,6 +392,7 @@ input {
 	overflow: hidden;
 	transform: scaleY(0);
 	transform-origin: 0 0;
+	transition: 0.3s;
 }
 .header__nav-main.active {
 	transform: scaleY(1);
@@ -423,7 +427,7 @@ input {
 	border-top: 3px solid #e5eeff;
 }
 .menu__list:nth-last-of-type(n + 2):hover .menu__link,
-.menu__list.menu__link:nth-last-of-type(n + 2):focus {
+.menu__list:nth-last-of-type(n + 2):focus-within .menu__link {
 	color: var(--theme-color-2);
 	border-bottom: 3px solid var(--theme-color-2);
 }
@@ -432,7 +436,7 @@ input {
 	color: var(--theme-color-6);
 }
 .menu__list:last-of-type:hover .menu__link,
-.menu__list:last-of-type:focus .menu__link {
+.menu__list:last-of-type:focus-within .menu__link {
 	border-bottom: 3px solid var(--theme-color-6);
 }
 /**================= nav-main end ===================*/
