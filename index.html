@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="preload" href="css/style.css" as="style" />
-	<link rel="preload" href="fonts/icomoon.ttf?ql76v8" as="font" type="font/ttf" crossorigin="anonymous">
+	<link rel="preload" href="fonts/icomoon.ttf?hc7tlg" as="font" type="font/ttf" crossorigin="anonymous">
 	<link rel="preload" href="fonts/AvenirNextCyr-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/AvenirNextCyr-Demi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="fonts/AvenirNextCyr-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -92,7 +92,7 @@
 					<div class="to-hosp_name">
 						<h3>Parens-Україна<br><span>Центр репродукції</span></h3>
 						<span class="to-hosp__rating">
-							<i class="_icon-star icons-theme-2"></i>4,5
+							<i class="_icon-star icons-theme-2"></i>4,8
 						</span>
 					</div>
 					<div class="to-hosp__contacts">
@@ -101,11 +101,24 @@
 								<a href="#" class="contacts__link"><i class="_icon-nav icons-theme-2">
 									</i>м.Київ, вул. Михайла Максимовича (Трутенка), 3, Голосіївський район</a>
 							</li>
-							<li class="contacts__list">
-								<a href="javascript:void(0)" class="contacts__link">
+							<li class="contacts__list contacts__list-menu">
+								<a href="javascript:void(0)" class="contacts__link" id="contSubBtn">
 									<i class="_icon-tel icons-theme-2"></i>
 									+38 (050) 137 - 60 - 41
 									<i class="_icon-arr icons-theme-1"></i></a>
+								<div class="sub-cont" id="contSubMenu">
+									<div class="sub-cont-title">
+										<h4>Контактні телефони</h4>
+										<button class="sub-contacts__btn" id="consSubClose">
+											<i class="_icon-close icons-theme-1"></i>
+										</button>
+									</div>
+									<ul class="sub-contacts__lists">
+										<li><a href="tel:380501376041" class="sub-contacts__link">+38 (050) 137 - 60 - 41</a></li>
+										<li><a href="tel:380442221619" class="sub-contacts__link">+38 (044) 222 - 16 - 19</a></li>
+										<li><a href="tel:380639855555" class="sub-contacts__link">+38 (063) 985 - 55 - 55</a></li>
+									</ul>
+								</div>
 							</li>
 							<li class="contacts__list">
 								<a href="http://smartmedicalcenter.ua" class="contacts__link">

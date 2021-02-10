@@ -17,3 +17,6 @@ window.onscroll = function showHeader() {
 		burgerMenu.classList.remove("active-fixed");
 	}
 };
+
+contSubBtn.onclick = () => contSubMenu.classList.add("active");
+consSubClose.onclick = () => contSubMenu.classList.remove("active");

@@ -180,7 +180,7 @@ html {
 	--theme-color-4: #a7c0e2;
 	--theme-color-5: #afb9dd;
 	--theme-color-6: #16395b;
-	--box-sh-theme: 0px 15px 20px hsla(161, 64%, 51%, 0.5);
+	--sh-theme-2: 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 body {
 	font-family: "Avenir Next";
@@ -543,7 +543,7 @@ button {
 }
 .contacts__link:hover,
 .contacts__link:focus {
-	text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
+	text-shadow: var(--sh-theme-2);
 	color: rgb(233, 233, 233);
 }
 .contacts__list a[href="javascript:void(0)"] {
@@ -564,6 +564,68 @@ button {
 .contacts__btn.button-theme-2:focus {
 	color: var(--theme-color-2);
 	background-color: var(--light);
+}
+.sub-cont {
+	background-color: var(--light);
+	padding: 18px 0 26px;
+	border: 1px solid #c0d3fe;
+	border-radius: 8px;
+	display: block;
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: 25px;
+	transition: 0.3s;
+	transform: scaleY(0);
+	transform-origin: 10px 20px;
+}
+.sub-cont.active {
+	visibility: visible;
+	transform: scaleY(1);
+}
+.sub-cont-title h4 {
+	color: var(--dark);
+	font-weight: normal;
+	font-size: 1.4rem;
+	margin-right: 22px;
+}
+.sub-cont-title {
+	border-bottom: 1px solid #c0d3fe;
+	padding: 0 30px 18px 41px;
+	display: flex;
+	align-items: center;
+}
+.sub-contacts__btn {
+	background-color: transparent;
+	border: none;
+}
+.sub-contacts__btn .icons-theme-1 {
+	color: var(--theme-color-4);
+}
+.sub-contacts__btn:hover .icons-theme-1,
+.sub-contacts__btn:focus .icons-theme-1 {
+	color: rgb(250, 150, 150);
+	transition: 0.3s;
+}
+.sub-contacts__lists {
+	padding: 20px 26px 0;
+}
+.sub-contacts__link {
+	font-size: 1.6rem;
+	color: var(--theme-color-6);
+	padding: 10px;
+	transition: 0.3s;
+}
+.sub-contacts__link:nth-of-type(n + 2) {
+	margin-top: 8px;
+}
+.sub-contacts__link:hover,
+.sub-contacts__link:focus {
+	text-shadow: var(--sh-theme-2);
+	color: var(--theme-color-2);
+}
+.contacts__list-menu {
+	position: relative;
 }
 /**================= to-hosp end ===================*/
 
