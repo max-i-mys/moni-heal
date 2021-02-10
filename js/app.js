@@ -1,10 +1,7 @@
-burgerBtn.onclick = function () {
-	if (!burgerMenu.classList.contains("active")) {
-		burgerMenu.classList.add("active");
-	} else {
-		burgerMenu.classList.remove("active");
-	}
-};
+burgerBtn.onclick = () =>
+	!burgerMenu.classList.contains("active")
+		? burgerMenu.classList.add("active")
+		: burgerMenu.classList.remove("active");
 
 window.onscroll = function showHeader() {
 	let header = document.querySelector("#burgerMenu");

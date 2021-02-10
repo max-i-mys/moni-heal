@@ -428,6 +428,10 @@ button {
 	position: absolute;
 	top: -25px;
 }
+.sub-logo:hover,
+.sub-logo:focus {
+	box-shadow: var(--sh-theme-2);
+}
 .header__menu {
 	display: inline-flex;
 	font-size: 2rem;
@@ -495,9 +499,7 @@ button {
 	);
 	padding: 66px 90px 82px;
 }
-.to-hosp__info {
-	width: 50%;
-}
+
 .to-hosp__sub-logo {
 	margin-bottom: 26px;
 }
@@ -626,6 +628,41 @@ button {
 }
 .contacts__list-menu {
 	position: relative;
+}
+/*  */
+.to-hosp__info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	font-size: 2.4rem;
+}
+.to-hosp__info p {
+	font-weight: bold;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.3s;
+}
+.info__blocks {
+	padding: 52px;
+	height: 50%;
+}
+.info__blocks:hover p,
+.info__blocks:focus p {
+	text-shadow: var(--sh-theme-2);
+	color: var(--theme-color);
+}
+.info__blocks.album {
+	background: linear-gradient(rgba(58, 89, 120, 80%), rgba(58, 89, 120, 80%)),
+		url(../img/Album.webp) no-repeat;
+	background-size: cover;
+}
+.info__blocks.map {
+	background: linear-gradient(rgba(58, 89, 120, 80%), rgba(58, 89, 120, 80%)),
+		url(../img/BigMap.webp) no-repeat;
+	background-size: cover;
+}
+.to-hosp__info .icons-theme-2 {
+	margin-right: 13px;
 }
 /**================= to-hosp end ===================*/
 
