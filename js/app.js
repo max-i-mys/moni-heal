@@ -19,10 +19,14 @@ contSubBtn.onclick = () => contSubMenu.classList.add("active");
 consSubClose.onclick = () => contSubMenu.classList.remove("active");
 
 const galleryThumbs = new Swiper(".gallery-bottom", {
-	spaceBetween: 10,
+	spaceBetween: 31,
 	slidesPerView: 5,
 	freeMode: true,
 	loop: true,
+	navigation: {
+		nextEl: ".photoBtn-next-min",
+		prevEl: ".photoBtn-prev-min",
+	},
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
 });
@@ -31,8 +35,8 @@ const galleryTop = new Swiper(".gallery-top", {
 	centeredSlides: true,
 	loop: true,
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".photoBtn-next-max",
+		prevEl: ".photoBtn-prev-max",
 	},
 	thumbs: {
 		swiper: galleryThumbs,
