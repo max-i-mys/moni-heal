@@ -676,6 +676,24 @@ button {
 .p__info .icons-theme-2 {
 	margin-right: 13px;
 }
+/*?================= popups start ===================*/
+.to-host__slider {
+	position: absolute;
+	z-index: 100;
+	transform: translateX(-50%);
+	visibility: hidden;
+}
+.swiper-container {
+	width: 1413px;
+	height: 896px;
+}
+.gallery-bottom {
+	height: 163px;
+}
+.swiper-slide {
+	background-size: cover;
+}
+/*?================= popups end ===================*/
 /**================= to-hosp end ===================*/
 
 /*TODO================= MAIN END ===================*/
