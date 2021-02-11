@@ -641,27 +641,39 @@ button {
 	display: flex;
 	align-items: flex-end;
 	transition: 0.3s;
+	z-index: 1;
+}
+.info__blocks:hover p,
+.info__blocks:focus p {
+	color: transparent;
 }
 .info__blocks {
 	padding: 52px;
 	height: 50%;
+	position: relative;
 }
-.info__blocks:hover p,
-.info__blocks:focus p {
-	text-shadow: var(--sh-theme-2);
-	color: var(--theme-color);
+.info__blocks::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(58, 89, 120, 80%);
+	transition: 0.3s;
+}
+.info__blocks:hover::before,
+.info__blocks:focus::before {
+	background-color: rgba(58, 89, 120, 0%);
 }
 .info__blocks.album {
-	background: linear-gradient(rgba(58, 89, 120, 80%), rgba(58, 89, 120, 80%)),
-		url(../img/Album.webp) no-repeat;
-	background-size: cover;
+	background: url(../img/Album.webp) no-repeat center/cover;
 }
 .info__blocks.map {
-	background: linear-gradient(rgba(58, 89, 120, 80%), rgba(58, 89, 120, 80%)),
-		url(../img/BigMap.webp) no-repeat;
-	background-size: cover;
+	background: url(../img/BigMap.webp) no-repeat center/cover;
 }
-.to-hosp__info .icons-theme-2 {
+.p__info .icons-theme-2 {
 	margin-right: 13px;
 }
 /**================= to-hosp end ===================*/
