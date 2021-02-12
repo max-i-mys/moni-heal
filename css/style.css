@@ -245,7 +245,7 @@ button {
 	color: var(--theme-color-2);
 	border: 1px solid var(--theme-color-2);
 	background-color: transparent;
-	padding: 10px 25px;
+	padding: 10px 23px;
 }
 .button-theme-2:hover,
 .button-theme-2:focus {
@@ -448,6 +448,7 @@ button {
 	overflow: visible;
 	position: fixed;
 	top: 0;
+	z-index: 10;
 }
 .nav-main-container {
 	display: flex;
@@ -769,8 +770,9 @@ button {
 }
 .about__hos {
 	width: 70%;
+	padding-right: 60px;
 }
-.about .titles {
+.title-hospital {
 	margin-bottom: 35px;
 }
 .about__hos p {
@@ -779,6 +781,55 @@ button {
 }
 .about__hos p:nth-of-type(n + 2) {
 	margin-top: 40px;
+}
+.about__hos .link-more {
+	margin-bottom: 123px;
+}
+.about__doctors {
+	display: flex;
+	position: relative;
+	padding-top: 13px;
+	flex-direction: column;
+}
+.about__doctors .button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.title-doctors {
+	margin-bottom: 20px;
+}
+.doctors__lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #3b3b3b;
+}
+.doctors__lists li {
+	width: 27%;
+}
+.doctors__lists li:nth-of-type(n + 4) {
+	margin-top: 17px;
+}
+.doctors__link {
+	padding: 10px 0;
+	text-transform: capitalize;
+	display: inline-block;
+}
+.doctors__link::first-letter {
+	color: var(--theme-color-3);
+}
+.doctors__link span {
+	color: var(--theme-color-4);
+}
+.doctors__link:hover,
+.doctors__link:hover span,
+.doctors__link:hover::first-letter,
+.doctors__link:focus,
+.doctors__link:focus span,
+.doctors__link:focus::first-letter {
+	color: var(--theme-color-2);
+	text-decoration: underline;
 }
 .about__time {
 	width: 30%;
