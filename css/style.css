@@ -917,6 +917,12 @@ button {
 }
 .services__count i {
 	font-size: 2.3rem;
+	margin-right: 8px;
+}
+.services__duration p,
+.services__price p {
+	display: flex;
+	align-items: center;
 }
 /**================= services end ===================*/
 /*TODO================= MAIN END ===================*/
