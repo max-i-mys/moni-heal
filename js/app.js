@@ -48,5 +48,6 @@ const galleryTop = new Swiper(".gallery-top", {
 const servises = new Swiper(".services__slider-container", {
 	slidesPerView: 4,
 	spaceBetween: 30,
+	loop: true,
 });
 /*================= services slider end =================*/

@@ -181,6 +181,7 @@ html {
 	--theme-color-5: #afb9dd;
 	--theme-color-6: #16395b;
 	--theme-color-7: #d2e1f5;
+	--sh-theme: 5px 5px 4px rgba(0, 0, 0, 0.25);
 	--sh-theme-2: 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 body {
@@ -870,11 +871,46 @@ button {
 /**================= services start ===================*/
 .services {
 	padding: 60px 0;
+	margin-bottom: 110px;
 }
 .services__head {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+}
+.services__slide {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border: 1px solid var(--theme-color-7);
+	border-radius: 8px;
+	margin-bottom: 10px;
+	transition: 0.3s !important;
+	font-size: 1.2rem;
+}
+.services__slide:hover {
+	border-color: var(--theme-color-2);
+	box-shadow: var(--sh-theme);
+}
+.services__desk {
+	order: 1;
+	font-size: 1.6rem;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+.services__category {
+	order: 2;
+	color: #999999;
+	margin-bottom: 18px;
+}
+.services__count {
+	order: 3;
+}
+.services__count {
+	color: var(--theme-color-6);
+	display: flex;
+	justify-content: space-between;
+	padding-right: 25px;
 }
 /**================= services end ===================*/
 /*TODO================= MAIN END ===================*/
