@@ -858,6 +858,16 @@ button {
 	padding-top: 12px;
 }
 /**================= about end ===================*/
+/**================= services start ===================*/
+.services {
+	padding: 60px 0;
+}
+.services__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+/**================= services end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
 

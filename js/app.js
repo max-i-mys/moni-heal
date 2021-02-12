@@ -18,6 +18,7 @@ window.onscroll = function showHeader() {
 contSubBtn.onclick = () => contSubMenu.classList.add("active");
 consSubClose.onclick = () => contSubMenu.classList.remove("active");
 
+/*================= photo__slider start =================*/
 const galleryThumbs = new Swiper(".gallery-bottom", {
 	spaceBetween: 31,
 	slidesPerView: 5,
@@ -42,3 +43,4 @@ const galleryTop = new Swiper(".gallery-top", {
 		swiper: galleryThumbs,
 	},
 });
+/*================= photo__slider end =================*/
