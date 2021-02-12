@@ -44,3 +44,9 @@ const galleryTop = new Swiper(".gallery-top", {
 	},
 });
 /*================= photo__slider end =================*/
+/*================= services slider start =================*/
+const servises = new Swiper(".services__slider-container", {
+	slidesPerView: 4,
+	spaceBetween: 30,
+});
+/*================= services slider end =================*/

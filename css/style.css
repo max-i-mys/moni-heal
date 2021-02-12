@@ -714,15 +714,24 @@ button {
 	transform: translate(-50%);
 	display: none;
 }
-.swiper-container {
+.gallery-top,
+.gallery-bottom {
 	width: 1413px;
 	height: 896px;
 }
 .gallery-top {
 	margin-bottom: 31px;
 }
+.gallery-top img {
+	width: 100%;
+	height: auto;
+}
 .gallery-bottom {
 	height: 163px;
+}
+.gallery-bottom img {
+	width: 100%;
+	height: auto;
 }
 .swiper-slide {
 	background-size: cover;
