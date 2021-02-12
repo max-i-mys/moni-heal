@@ -287,6 +287,17 @@ button {
 .sliderBtn:focus i {
 	color: var(--light);
 }
+.link-more {
+	margin-top: 40px;
+	color: var(--theme-color-3);
+	font-weight: bold;
+	text-decoration: underline;
+}
+.link-more:hover,
+.link-more:focus {
+	text-decoration: none;
+	text-shadow: var(--sh-theme-2);
+}
 /*TODO================= COMMON STYLES END ===================*/
 /*TODO================= HEADER START ===================*/
 .header {
@@ -663,7 +674,7 @@ button {
 	display: flex;
 	align-items: flex-end;
 	transition: 0.3s;
-	background-color: rgba(58, 89, 120, 80%);
+	background-color: rgba(58, 89, 120, 0.8);
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -682,7 +693,7 @@ button {
 }
 .info__blocks:hover::before,
 .info__blocks:focus::before {
-	background-color: rgba(58, 89, 120, 0%);
+	background-color: rgba(58, 89, 120, 0);
 }
 .info__blocks.album {
 	background: url(../img/Album.webp) no-repeat center/cover;
@@ -748,7 +759,31 @@ button {
 }
 /*?================= popups end ===================*/
 /**================= to-hosp end ===================*/
-
+/**================= about start ===================*/
+.about {
+	padding: 60px 0;
+}
+.about-container {
+	display: flex;
+}
+.about__hos {
+	width: 70%;
+}
+.about__hos h3 {
+	font-size: 2.4rem;
+	margin-bottom: 35px;
+}
+.about__hos p {
+	font-weight: 300;
+	line-height: 1.2;
+}
+.about__hos p:nth-of-type(n + 2) {
+	margin-top: 40px;
+}
+.about__time {
+	width: 30%;
+}
+/**================= about end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
 
