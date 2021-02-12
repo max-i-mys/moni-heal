@@ -672,6 +672,9 @@ button {
 	flex-direction: column;
 	font-size: 2.4rem;
 }
+.to-hosp__info i {
+	margin-right: 13px;
+}
 .to-hosp__info p {
 	font-weight: bold;
 	display: flex;
@@ -911,6 +914,9 @@ button {
 	display: flex;
 	justify-content: space-between;
 	padding-right: 25px;
+}
+.services__count i {
+	font-size: 2.3rem;
 }
 /**================= services end ===================*/
 /*TODO================= MAIN END ===================*/
