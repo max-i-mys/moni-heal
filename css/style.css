@@ -303,7 +303,6 @@ button {
 .box-slide {
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
 	border: 1px solid var(--theme-color-7);
 	border-radius: 8px;
 	margin-bottom: 10px;
@@ -901,6 +900,9 @@ button {
 	line-height: 1.2;
 	margin-bottom: 15px;
 }
+.services__slider-container .box-slide {
+	padding: 30px;
+}
 .services__category {
 	order: 2;
 	color: #999999;
@@ -947,6 +949,14 @@ button {
 .doctors__head .titles {
 	margin-bottom: 0;
 }
+.doctors__slider-container .box-slide {
+	padding: 30px 0;
+}
+.doctors__info {
+	display: flex;
+	padding: 0 30px 30px;
+	border-bottom: 1px solid var(--theme-color-7);
+}
 .doctors__foto {
 	width: 80px;
 	height: 80px;
@@ -955,7 +965,8 @@ button {
 	background: url(../img/doctor.webp) no-repeat center center;
 	background-size: contain;
 	position: relative;
-	background-size: contain;
+	width: 80px;
+	width: 30%;
 }
 .doctors__visit {
 	position: absolute;
@@ -993,6 +1004,19 @@ button {
 	content: "Онлайн";
 	color: var(--theme-color-2);
 	font-weight: bold;
+}
+.doctors__about {
+	width: 70%;
+	padding: 5px 0 0 17px;
+	font-size: 1.6rem;
+}
+.doctors__name {
+	margin-bottom: 13px;
+}
+.doctors__specialty {
+	margin-top: 13px;
+	font-size: 1.2rem;
+	color: var(--theme-color-6);
 }
 /**================= doctors end ===================*/
 /*TODO================= MAIN END ===================*/
