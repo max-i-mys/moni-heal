@@ -300,6 +300,20 @@ button {
 	text-decoration: none;
 	text-shadow: var(--sh-theme-2);
 }
+.box-slide {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border: 1px solid var(--theme-color-7);
+	border-radius: 8px;
+	margin-bottom: 10px;
+	transition: 0.3s !important;
+	font-size: 1.2rem;
+}
+.box-slide:hover {
+	border-color: var(--theme-color-2);
+	box-shadow: var(--sh-theme);
+}
 /*TODO================= COMMON STYLES END ===================*/
 /*TODO================= HEADER START ===================*/
 .header {
@@ -751,26 +765,19 @@ button {
 .photo__slider-container {
 	position: relative;
 }
-.photoBtn-prev-max {
-	left: -80px;
-	bottom: 50%;
-	transform: translateY(50%);
-}
-.photoBtn-next-max {
-	right: -80px;
-	bottom: 50%;
-	transform: translateY(50%);
-	z-index: 999;
-}
+.photoBtn-prev-max,
 .photoBtn-prev-min {
 	left: -80px;
 	bottom: 50%;
 	transform: translateY(50%);
+	z-index: 999;
 }
+.photoBtn-next-max,
 .photoBtn-next-min {
 	right: -80px;
 	bottom: 50%;
 	transform: translateY(50%);
+	z-index: 999;
 }
 /*?================= popups end ===================*/
 /**================= to-hosp end ===================*/
@@ -883,20 +890,10 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-bottom: 21px;
 }
-.services__slide {
-	display: flex;
-	flex-direction: column;
-	padding: 30px;
-	border: 1px solid var(--theme-color-7);
-	border-radius: 8px;
-	margin-bottom: 10px;
-	transition: 0.3s !important;
-	font-size: 1.2rem;
-}
-.services__slide:hover {
-	border-color: var(--theme-color-2);
-	box-shadow: var(--sh-theme);
+.services__head .titles {
+	margin-bottom: 0;
 }
 .services__desk {
 	order: 1;
@@ -927,19 +924,60 @@ button {
 	display: flex;
 	align-items: center;
 }
-.services__slider .servicesBtn-prev,
-.services__slider .servicesBtn-next {
+.servicesBtn-prev,
+.servicesBtn-next {
 	position: absolute;
 	top: calc(50% - 5px);
 	transform: translateY(-50%);
 }
-.services__slider .servicesBtn-prev {
+.servicesBtn-prev {
 	left: -80px;
 }
-.services__slider .servicesBtn-next {
+.servicesBtn-next {
 	right: -80px;
 }
 /**================= services end ===================*/
+/**================= doctors start ===================*/
+.doctors__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 21px;
+}
+.doctors__head .titles {
+	margin-bottom: 0;
+}
+.doctors__foto {
+	width: 80px;
+	height: 80px;
+	border: 2px solid var(--theme-color-3);
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.doctors__visit {
+	position: relative;
+}
+.doctors__foto img {
+	width: 80px;
+	height: auto;
+}
+.doctors__condition {
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid var(--light);
+	bottom: 0;
+	left: 6px;
+}
+.doctor-offline {
+	background-color: var(--theme-color-4);
+}
+/**================= doctors end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
 

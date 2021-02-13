@@ -3,17 +3,17 @@ burgerBtn.onclick = () =>
 		? burgerMenu.classList.add("active")
 		: burgerMenu.classList.remove("active");
 
-window.onscroll = function showHeader() {
-	let header = document.querySelector("#burgerMenu");
-	if (window.pageYOffset > 100) {
-		burgerMenu.classList.remove("active");
-	}
-	if (window.pageYOffset > 300) {
-		burgerMenu.classList.add("active-fixed");
-	} else {
-		burgerMenu.classList.remove("active-fixed");
-	}
-};
+// window.onscroll = function showHeader() {
+// 	let header = document.querySelector("#burgerMenu");
+// 	if (window.pageYOffset > 100) {
+// 		burgerMenu.classList.remove("active");
+// 	}
+// 	if (window.pageYOffset > 300) {
+// 		burgerMenu.classList.add("active-fixed");
+// 	} else {
+// 		burgerMenu.classList.remove("active-fixed");
+// 	}
+// };
 
 contSubBtn.onclick = () => contSubMenu.classList.add("active");
 consSubClose.onclick = () => contSubMenu.classList.remove("active");
@@ -53,5 +53,22 @@ const servises = new Swiper(".services__slider-container", {
 		nextEl: ".servicesBtn-next",
 		prevEl: ".servicesBtn-prev",
 	},
+	autoplay: {
+		delay: 5000,
+	},
 });
 /*================= services slider end =================*/
+/*================= doctors slider start =================*/
+const doctors = new Swiper(".doctors__slider-container", {
+	slidesPerView: 4,
+	spaceBetween: 30,
+	loop: true,
+	navigation: {
+		nextEl: ".doctorsBtn-next",
+		prevEl: ".doctorsBtn-prev",
+	},
+	autoplay: {
+		delay: 5000,
+	},
+});
+/*================= doctors slider end =================*/
