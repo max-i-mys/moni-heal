@@ -952,30 +952,47 @@ button {
 	height: 80px;
 	border: 2px solid var(--theme-color-3);
 	border-radius: 50%;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background: url(../img/doctor.webp) no-repeat center center;
+	background-size: contain;
+	position: relative;
+	background-size: contain;
 }
 .doctors__visit {
-	position: relative;
-}
-.doctors__foto img {
-	width: 80px;
-	height: auto;
+	position: absolute;
+	top: 64px;
+	font-size: 1rem;
+	width: 100%;
 }
 .doctors__condition {
+	display: block;
+	text-align: center;
+}
+.doctors__visit .doctors__activity {
 	width: 16px;
 	height: 16px;
-	display: block;
-	position: absolute;
 	border-radius: 50%;
 	border: 1px solid var(--light);
-	bottom: 0;
-	left: 6px;
+	display: block;
+	margin-left: 9px;
 }
-.doctor-offline {
+.doctor-offline .doctors__activity {
 	background-color: var(--theme-color-4);
+}
+.doctor-online .doctors__activity {
+	background-color: var(--theme-color-2);
+}
+.doctors__condition::before {
+	margin-top: 5px;
+}
+.doctor-offline .doctors__condition::before {
+	content: attr(data-last-visit) " тому";
+	color: var(--theme-color-4);
+	font-weight: 300;
+}
+.doctor-online .doctors__condition::before {
+	content: "Онлайн";
+	color: var(--theme-color-2);
+	font-weight: bold;
 }
 /**================= doctors end ===================*/
 /*TODO================= MAIN END ===================*/
