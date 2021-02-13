@@ -940,6 +940,9 @@ button {
 }
 /**================= services end ===================*/
 /**================= doctors start ===================*/
+.doctors {
+	font-size: 1.2rem;
+}
 .doctors__head {
 	display: flex;
 	justify-content: space-between;
@@ -1007,17 +1010,36 @@ button {
 }
 .doctors__about {
 	width: 70%;
-	padding: 5px 0 0 17px;
-	font-size: 1.6rem;
+	padding-left: 17px;
+	line-height: 1.2;
 }
 .doctors__name {
-	margin-bottom: 13px;
+	font-size: 1.6rem;
 }
 .doctors__specialty {
 	margin-top: 13px;
-	font-size: 1.2rem;
 	color: var(--theme-color-6);
 }
+.doctors__evaluation {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 30px;
+	border-bottom: 1px solid var(--theme-color-7);
+}
+.doctors__evaluation h3 {
+	color: var(--theme-color-5);
+}
+.doctors__evaluation span {
+	display: flex;
+	align-items: center;
+	margin-top: 9px;
+	font-weight: bold;
+}
+.doctors__evaluation span i {
+	color: var(--theme-color-3);
+	margin-right: 8px;
+}
+
 /**================= doctors end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
