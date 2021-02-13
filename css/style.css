@@ -876,6 +876,9 @@ button {
 	padding: 60px 0;
 	margin-bottom: 110px;
 }
+.services__slider {
+	position: relative;
+}
 .services__head {
 	display: flex;
 	justify-content: space-between;
@@ -923,6 +926,18 @@ button {
 .services__price p {
 	display: flex;
 	align-items: center;
+}
+.services__slider .servicesBtn-prev,
+.services__slider .servicesBtn-next {
+	position: absolute;
+	top: calc(50% - 5px);
+	transform: translateY(-50%);
+}
+.services__slider .servicesBtn-prev {
+	left: -80px;
+}
+.services__slider .servicesBtn-next {
+	right: -80px;
 }
 /**================= services end ===================*/
 /*TODO================= MAIN END ===================*/

@@ -49,5 +49,9 @@ const servises = new Swiper(".services__slider-container", {
 	slidesPerView: 4,
 	spaceBetween: 30,
 	loop: true,
+	navigation: {
+		nextEl: ".servicesBtn-next",
+		prevEl: ".servicesBtn-prev",
+	},
 });
 /*================= services slider end =================*/
