@@ -1163,6 +1163,12 @@ button {
 	font-weight: 700;
 	margin-top: 5px;
 }
+.reaction-negative::before {
+	content: "Негативний";
+	color: #e85164;
+	font-weight: 700;
+	margin-top: 5px;
+}
 .commits__desk {
 	padding: 30px;
 	line-height: 1.23;
@@ -1191,7 +1197,7 @@ button {
 	display: block;
 	position: absolute;
 	top: -7px;
-	left: 40px;
+	left: 42px;
 	transform: rotate(45deg);
 }
 /**================= commits end ===================*/
