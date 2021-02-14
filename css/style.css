@@ -880,7 +880,7 @@ button {
 /**================= services start ===================*/
 .services {
 	padding: 60px 0;
-	margin-bottom: 110px;
+	margin-bottom: 50px;
 }
 .services__slider {
 	position: relative;
@@ -943,6 +943,7 @@ button {
 .doctors {
 	font-size: 1.2rem;
 	background-color: var(--light);
+	padding: 60px 0;
 }
 .doctors__head {
 	display: flex;
@@ -955,6 +956,7 @@ button {
 	height: 300px;
 }
 .doctors__slider-container {
+	top: 0;
 	position: absolute;
 	z-index: 1;
 }
@@ -967,10 +969,12 @@ button {
 	overflow: hidden;
 	background-color: var(--light);
 }
-.doctors__slider-container .box-slide:hover {
+.doctors__slider-container .box-slide:hover,
+.doctors__slider-container .box-slide:focus-within {
 	height: auto;
 }
-.doctors__slider-container .box-slide:hover .doctors__price {
+.doctors__slider-container .box-slide:hover .doctors__price,
+.doctors__slider-container .box-slide:focus-within .doctors__price {
 	margin-top: 12px;
 	visibility: visible;
 	transition: 0.3s;
@@ -1104,6 +1108,93 @@ button {
 	right: -80px;
 }
 /**================= doctors end ===================*/
+/**================= commits start ===================*/
+.commits {
+	padding: 60px 0 50px;
+}
+.commits__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.commits__container h3 {
+	width: 100%;
+}
+.commits__block {
+	width: 33%;
+}
+.commits__block:nth-last-of-type(n + 2) {
+	padding-right: 15px;
+}
+.commits__block:nth-of-type(n + 2) {
+	padding-left: 15px;
+}
+.commits__client {
+	margin-bottom: 16px;
+}
+.commits__head {
+	display: flex;
+	padding-right: 4%;
+}
+.commits__foto {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid var(--theme-color-3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-right: 4%;
+}
+.commits__head img {
+	height: 100%;
+	width: auto;
+	object-fit: contain;
+}
+.commits__info {
+	width: 70%;
+}
+.commits__head h4 {
+	line-height: 1.23;
+}
+.reaction-positive::before {
+	content: "Позитивний";
+	color: var(--theme-color-2);
+	font-weight: 700;
+	margin-top: 5px;
+}
+.commits__desk {
+	padding: 30px;
+	line-height: 1.23;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	position: relative;
+}
+.commits__time::before {
+	content: attr(data-time);
+	color: var(--theme-color-5);
+	font-size: 1.4rem;
+}
+.commits__desk p {
+	font-size: 2.4rem;
+	font-weight: 300;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+}
+.commits__triangle {
+	width: 17px;
+	height: 17px;
+	background-color: inherit;
+	display: block;
+	position: absolute;
+	top: -7px;
+	left: 40px;
+	transform: rotate(45deg);
+}
+/**================= commits end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
 
