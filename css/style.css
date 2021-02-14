@@ -954,6 +954,7 @@ button {
 }
 .doctors__slider-container .box-slide {
 	padding: 30px 0;
+	min-height: 472px;
 }
 .doctors__info {
 	display: flex;
@@ -1026,7 +1027,7 @@ button {
 	padding: 15px 30px;
 	border-bottom: 1px solid var(--theme-color-7);
 }
-.doctors__evaluation h3 {
+.doctors__titles {
 	color: var(--theme-color-5);
 }
 .doctors__evaluation span {
@@ -1039,7 +1040,35 @@ button {
 	color: var(--theme-color-3);
 	margin-right: 8px;
 }
+.doctors__com-info {
+	padding: 23px 30px;
+	font-weight: 300;
+}
+.doctors__adress p {
+	margin-top: 4px;
+	line-height: 1.25;
+}
+.doctors__adress {
+	margin-bottom: 12px;
+}
 
+.doctors__price-list {
+	margin-top: 4px;
+	line-height: 1.25;
+}
+.doctors__price-list dd {
+	font-weight: bold;
+}
+.doctors__price-list dt,
+.doctors__price-list dd {
+	margin-bottom: 4px;
+	display: inline;
+}
+.doctors__slider-container .button {
+	margin-top: auto;
+	align-self: end;
+	margin-left: 30px;
+}
 /**================= doctors end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
