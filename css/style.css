@@ -942,6 +942,7 @@ button {
 /**================= doctors start ===================*/
 .doctors {
 	font-size: 1.2rem;
+	background-color: var(--light);
 }
 .doctors__head {
 	display: flex;
@@ -949,12 +950,30 @@ button {
 	align-items: flex-start;
 	margin-bottom: 21px;
 }
+.doctors__slider {
+	position: relative;
+	height: 300px;
+}
+.doctors__slider-container {
+	position: absolute;
+	z-index: 1;
+}
 .doctors__head .titles {
 	margin-bottom: 0;
 }
 .doctors__slider-container .box-slide {
 	padding: 30px 0;
-	min-height: 472px;
+	height: 300px;
+	overflow: hidden;
+	background-color: var(--light);
+}
+.doctors__slider-container .box-slide:hover {
+	height: auto;
+}
+.doctors__slider-container .box-slide:hover .doctors__price {
+	margin-top: 12px;
+	visibility: visible;
+	transition: 0.3s;
 }
 .doctors__info {
 	display: flex;
@@ -1051,7 +1070,10 @@ button {
 .doctors__adress {
 	margin-bottom: 12px;
 }
-
+.doctors__price {
+	margin-top: 0;
+	visibility: hidden;
+}
 .doctors__price-list {
 	margin-top: 4px;
 	line-height: 1.25;
@@ -1068,6 +1090,18 @@ button {
 	margin-top: auto;
 	align-self: end;
 	margin-left: 30px;
+}
+.doctorsBtn-prev,
+.doctorsBtn-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.doctorsBtn-prev {
+	left: -80px;
+}
+.doctorsBtn-next {
+	right: -80px;
 }
 /**================= doctors end ===================*/
 /*TODO================= MAIN END ===================*/
