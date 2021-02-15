@@ -221,6 +221,10 @@ button {
 	font-size: 2.4rem;
 	margin-bottom: 30px;
 }
+.titles-count::after {
+	content: "(" attr(data-count) ")";
+	margin-left: 5px;
+}
 .button {
 	min-width: 98px;
 	display: inline-flex;
@@ -782,7 +786,7 @@ button {
 /**================= to-hosp end ===================*/
 /**================= about start ===================*/
 .about {
-	padding: 60px 0;
+	padding: 60px 0 42px;
 }
 .about-container {
 	display: flex;
@@ -819,33 +823,26 @@ button {
 	margin-bottom: 20px;
 }
 .doctors__lists {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	color: #3b3b3b;
-}
-.doctors__lists li {
-	width: 27%;
-}
-.doctors__lists li:nth-of-type(n + 4) {
-	margin-top: 17px;
+	flex-direction: column;
+	columns: 3;
 }
 .doctors__link {
-	padding: 10px 0;
+	padding: 18px 0;
 	text-transform: capitalize;
 	display: inline-block;
 }
 .doctors__link::first-letter {
 	color: var(--theme-color-3);
 }
-.doctors__link span {
+.doctors__link.titles-count::after {
 	color: var(--theme-color-4);
 }
 .doctors__link:hover,
-.doctors__link:hover span,
+.doctors__link.titles-count:hover::after,
 .doctors__link:hover::first-letter,
 .doctors__link:focus,
-.doctors__link:focus span,
+.doctors__link.titles-count:focus::after,
 .doctors__link:focus::first-letter {
 	color: var(--theme-color-2);
 	text-decoration: underline;
@@ -879,8 +876,7 @@ button {
 /**================= about end ===================*/
 /**================= services start ===================*/
 .services {
-	padding: 60px 0;
-	margin-bottom: 50px;
+	padding: 60px 0 85px;
 }
 .services__slider {
 	position: relative;
@@ -943,7 +939,7 @@ button {
 .doctors {
 	font-size: 1.2rem;
 	background-color: var(--light);
-	padding: 60px 0;
+	padding: 85px 0 60px;
 }
 .doctors__head {
 	display: flex;
@@ -1053,15 +1049,25 @@ button {
 .doctors__titles {
 	color: var(--theme-color-5);
 }
-.doctors__evaluation span {
+.doctors__evaluation .icons-theme-1::after {
+	content: attr(data-count);
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--dark);
+	font-family: "Avenir Next";
+	display: inline-block;
+	margin-left: 8px;
+}
+.doctors__evaluation i {
 	display: flex;
 	align-items: center;
 	margin-top: 9px;
 	font-weight: bold;
 }
-.doctors__evaluation span i {
+.doctors__evaluation i {
 	color: var(--theme-color-3);
-	margin-right: 8px;
+	display: flex;
+	align-items: center;
 }
 .doctors__com-info {
 	padding: 23px 30px;
@@ -1135,21 +1141,13 @@ button {
 	display: flex;
 	padding-right: 4%;
 }
-.commits__foto {
-	width: 100px;
+.commits__photo {
 	height: 100px;
+	width: auto;
+	object-fit: cover;
 	border-radius: 50%;
 	border: 2px solid var(--theme-color-3);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
 	margin-right: 4%;
-}
-.commits__head img {
-	height: 100%;
-	width: auto;
-	object-fit: contain;
 }
 .commits__info {
 	width: 70%;
@@ -1157,17 +1155,17 @@ button {
 .commits__head h4 {
 	line-height: 1.23;
 }
-.reaction-positive::before {
-	content: "Позитивний";
-	color: var(--theme-color-2);
+.commits__reaction::after {
+	content: attr(data-reaction);
 	font-weight: 700;
 	margin-top: 5px;
+	display: block;
 }
-.reaction-negative::before {
-	content: "Негативний";
+.commits__reaction[data-reaction="Позитивний"]::after {
+	color: var(--theme-color-2);
+}
+.commits__reaction[data-reaction="Негативний"]::after {
 	color: #e85164;
-	font-weight: 700;
-	margin-top: 5px;
 }
 .commits__desk {
 	padding: 30px;
@@ -1176,8 +1174,18 @@ button {
 	border-radius: 4px;
 	position: relative;
 }
-.commits__time::before {
-	content: attr(data-time);
+.commits__desk::before {
+	width: 17px;
+	height: 17px;
+	content: "";
+	background-color: inherit;
+	display: block;
+	position: absolute;
+	top: -7px;
+	left: 42px;
+	transform: rotate(45deg);
+}
+.commits__time {
 	color: var(--theme-color-5);
 	font-size: 1.4rem;
 }
@@ -1189,16 +1197,6 @@ button {
 	display: -webkit-box;
 	-webkit-line-clamp: 7;
 	-webkit-box-orient: vertical;
-}
-.commits__triangle {
-	width: 17px;
-	height: 17px;
-	background-color: inherit;
-	display: block;
-	position: absolute;
-	top: -7px;
-	left: 42px;
-	transform: rotate(45deg);
 }
 /**================= commits end ===================*/
 /*TODO================= MAIN END ===================*/
