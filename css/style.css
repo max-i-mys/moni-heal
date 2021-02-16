@@ -977,56 +977,52 @@ button {
 }
 .doctors__info {
 	display: flex;
-	padding: 0 30px 30px;
+	padding: 0 30px 16px;
 	border-bottom: 1px solid var(--theme-color-7);
 }
-.doctors__foto {
-	width: 80px;
-	height: 80px;
-	border: 2px solid var(--theme-color-3);
-	border-radius: 50%;
-	background: url(../img/doctor.webp) no-repeat center center;
-	background-size: contain;
-	position: relative;
-	width: 80px;
-	width: 30%;
-}
 .doctors__visit {
-	position: absolute;
-	top: 64px;
+	position: relative;
 	font-size: 1rem;
-	width: 100%;
 }
-.doctors__condition {
-	display: block;
-	text-align: center;
+.doctors__photo {
+	width: 80px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid var(--theme-color-3);
+	margin-right: 4%;
 }
-.doctors__visit .doctors__activity {
+.doctors__visit::before {
+	content: "";
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
 	border: 1px solid var(--light);
-	display: block;
-	margin-left: 9px;
+	position: absolute;
+	top: 64px;
+	left: 9px;
 }
-.doctor-offline .doctors__activity {
+.doctor-offline.doctors__visit::before {
 	background-color: var(--theme-color-4);
 }
-.doctor-online .doctors__activity {
+.doctor-online.doctors__visit::before {
 	background-color: var(--theme-color-2);
 }
-.doctors__condition::before {
+.doctors__visit::after {
 	margin-top: 5px;
+	width: 100%;
+	text-align: center;
+	display: block;
 }
-.doctor-offline .doctors__condition::before {
-	content: attr(data-last-visit) " тому";
-	color: var(--theme-color-4);
-	font-weight: 300;
-}
-.doctor-online .doctors__condition::before {
+.doctor-online.doctors__visit::after {
 	content: "Онлайн";
 	color: var(--theme-color-2);
 	font-weight: bold;
+}
+.doctor-offline.doctors__visit::after {
+	content: attr(data-last-visit) " тому";
+	color: var(--theme-color-4);
+	font-weight: 300;
 }
 .doctors__about {
 	width: 70%;

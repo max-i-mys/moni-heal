@@ -67,8 +67,8 @@ const doctors = new Swiper(".doctors__slider-container", {
 		nextEl: ".doctorsBtn-next",
 		prevEl: ".doctorsBtn-prev",
 	},
-	autoplay: {
-		delay: 5000,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// },
 });
 /*================= doctors slider end =================*/
