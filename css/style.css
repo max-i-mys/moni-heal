@@ -1196,6 +1196,9 @@ button {
 }
 /**================= commits end ===================*/
 /**================= news start ===================*/
+.news {
+	padding: 50px 0 155px;
+}
 .news__blocks {
 	display: flex;
 	justify-content: space-between;
