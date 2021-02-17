@@ -1195,6 +1195,61 @@ button {
 	-webkit-box-orient: vertical;
 }
 /**================= commits end ===================*/
+/**================= news start ===================*/
+.news__blocks {
+	display: flex;
+	justify-content: space-between;
+}
+.news__box {
+	display: flex;
+	flex-direction: column;
+	width: 23%;
+	font-size: 1.2rem;
+	color: var(--theme-color-5);
+	min-height: 400px;
+}
+.news__box img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 4px;
+}
+.news__title {
+	font-size: 2.4rem;
+	color: var(--theme-color-6);
+	line-height: 1.23;
+	margin: 20px 0;
+	font-weight: bold;
+}
+.news__title:hover,
+.news__title:focus {
+	text-shadow: var(--sh-theme-2);
+}
+.news__about {
+	margin-top: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.news__about::before {
+	content: attr(data-last-visit);
+	margin-right: auto;
+}
+.news__about i {
+	display: flex;
+	align-items: center;
+	justify-items: end;
+}
+.news__about ._icon-eye {
+	margin-right: 12px;
+}
+.news__about i::after {
+	content: attr(data-count);
+	font-family: "Avenir Next";
+	font-size: 1.2rem;
+	margin-left: 6px;
+}
+/**================= news end ===================*/
 /*TODO================= MAIN END ===================*/
 /* Desktop first method
 
