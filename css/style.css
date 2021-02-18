@@ -1254,6 +1254,55 @@ button {
 }
 /**================= news end ===================*/
 /*TODO================= MAIN END ===================*/
+/*TODO================= FOOTER START ===================*/
+/**================= apps start ===================*/
+.apps {
+	padding: 34px 0;
+	background: linear-gradient(
+		125.51deg,
+		var(--theme-color-2) 39.05%,
+		var(--theme-color-3) 70.06%
+	);
+	color: var(--light);
+}
+.apps-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 0 345px 0 365px;
+}
+.apps__img {
+	width: 352px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	bottom: -34px;
+}
+.apps__titles {
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+.apps__load {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 0;
+}
+.apps__icon img {
+	width: auto;
+	height: 50px;
+	filter: contrast(0.7);
+	transition: 0.3s;
+}
+.apps__icon:hover img {
+	filter: contrast(1);
+}
+.apps__icon:nth-last-of-type(n + 2) {
+	margin-right: 9px;
+}
+/**================= apps end ===================*/
+/*TODO================= FOOTER END ===================*/
 /* Desktop first method
 
 /* // XX-Large devices (larger desktops) */
