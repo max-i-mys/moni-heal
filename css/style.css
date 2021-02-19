@@ -1452,6 +1452,15 @@ button {
 	border-radius: 50%;
 	font-size: 1.4rem;
 }
+.footer-box__bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__bottom-link img {
+	width: 167px;
+	height: auto;
+}
 /**================= footer-box end ===================*/
 /*TODO================= FOOTER END ===================*/
 /* Desktop first method
