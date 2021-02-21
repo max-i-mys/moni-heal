@@ -354,6 +354,11 @@ button {
 .header__search input[type="search"]::placeholder {
 	color: var(--theme-color-4);
 }
+.header__search label {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
 .header__nav-right {
 	display: flex;
 	align-items: center;
