@@ -3,17 +3,17 @@ burgerBtn.onclick = () =>
 		? burgerMenu.classList.add("active")
 		: burgerMenu.classList.remove("active");
 
-window.onscroll = function showHeader() {
-	let header = document.querySelector("#burgerMenu");
-	if (window.pageYOffset > 100) {
-		burgerMenu.classList.remove("active");
-	}
-	if (window.pageYOffset > 300) {
-		burgerMenu.classList.add("active-fixed");
-	} else {
-		burgerMenu.classList.remove("active-fixed");
-	}
-};
+// window.onscroll = function showHeader() {
+// 	let header = document.querySelector("#burgerMenu");
+// 	if (window.pageYOffset > 100) {
+// 		burgerMenu.classList.remove("active");
+// 	}
+// 	if (window.pageYOffset > 300) {
+// 		burgerMenu.classList.add("active-fixed");
+// 	} else {
+// 		burgerMenu.classList.remove("active-fixed");
+// 	}
+// };
 
 contSubBtn.onclick = () => contSubMenu.classList.add("active");
 consSubClose.onclick = () => contSubMenu.classList.remove("active");
@@ -67,6 +67,29 @@ const doctors = new Swiper(".doctors__slider-container", {
 		nextEl: ".doctorsBtn-next",
 		prevEl: ".doctorsBtn-prev",
 	},
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		// when window width is >= 480px
+		// 480: {
+		//   slidesPerView: 3,
+		//   spaceBetween: 30
+		// },
+		// // when window width is >= 640px
+		640: {
+			slidesPerView: 3,
+			spaceBetween: 40,
+		},
+		1400: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+
+	// },
 	// autoplay: {
 	// 	delay: 5000,
 	// },

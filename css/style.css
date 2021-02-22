@@ -311,7 +311,7 @@ button {
 	border-radius: 8px;
 	margin-bottom: 10px;
 	transition: 0.3s !important;
-	font-size: 1.2rem;
+	font-size: 12px;
 }
 .box-slide:hover {
 	border-color: var(--theme-color-2);
@@ -451,6 +451,7 @@ button {
 .header__nav-main {
 	background-color: #e5eeff;
 	position: absolute;
+	z-index: 10;
 	left: 0;
 	right: 0;
 	top: 87px;
@@ -1475,9 +1476,39 @@ button {
 
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-	.container-large {
-		max-width: 100%;
-		/* padding: 0 15px; */
+	html {
+		font-size: 8px;
+	}
+	.container {
+		max-width: 1140px;
+	}
+	.menu__list:last-of-type {
+		margin-left: 0;
+		font-size: 1.7rem;
+	}
+	.menu__link {
+		padding: 24px 17px;
+	}
+	.to-hosp__info p {
+		padding: 40px;
+	}
+	.to-hosp__cont {
+		padding: 55px 55px 58px;
+	}
+	.services__slider-container .box-slide {
+		padding: 23px;
+	}
+	.box-slide {
+		font-size: 12px;
+	}
+	.about__hos .link-more {
+		margin-bottom: 113px;
+	}
+	.services {
+		padding-bottom: 55px;
+	}
+	.doctors {
+		padding-top: 55px;
 	}
 }
 /* // Large devices (desktops, less than 1200px) */
