@@ -56,6 +56,13 @@ const servises = new Swiper(".services__slider-container", {
 	autoplay: {
 		delay: 5000,
 	},
+	// breakpoints: {
+	// 	// when window width is >= 320px
+	// 	1600: {
+	// 		slidesPerView: 4,
+	// 		spaceBetween: 30,
+	// 	},
+	// },
 });
 /*================= services slider end =================*/
 /*================= doctors slider start =================*/
@@ -83,7 +90,7 @@ const doctors = new Swiper(".doctors__slider-container", {
 			slidesPerView: 3,
 			spaceBetween: 40,
 		},
-		1400: {
+		1600: {
 			slidesPerView: 4,
 			spaceBetween: 30,
 		},
