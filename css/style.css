@@ -798,14 +798,14 @@ button {
 /**================= to-hosp end ===================*/
 /**================= about start ===================*/
 .about {
-	padding: 60px 0 42px;
+	padding: 60px 0;
 }
 .about-container {
 	display: flex;
+	justify-content: space-between;
 }
 .about__hos {
-	width: 70%;
-	padding-right: 60px;
+	width: 65%;
 }
 .title-hospital {
 	margin-bottom: 35px;
@@ -817,16 +817,48 @@ button {
 .about__hos p:nth-of-type(n + 2) {
 	margin-top: 40px;
 }
-.about__hos .link-more {
-	margin-bottom: 123px;
-}
 .about__doctors {
 	display: flex;
 	position: relative;
 	padding-top: 13px;
 	flex-direction: column;
 }
-.about__doctors .button {
+.about__time {
+	width: 27%;
+}
+.about__time-lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.about__time-lists dt {
+	width: 50%;
+	color: var(--theme-color-5);
+}
+.about__time-lists dd {
+	width: 50%;
+	text-align: right;
+}
+.about__time-lists dt,
+.about__time-lists dd {
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--theme-color-7);
+}
+.about__time-lists dt:nth-of-type(n + 2),
+.about__time-lists dd:nth-of-type(n + 2) {
+	padding-top: 12px;
+}
+/**================= about end ===================*/
+/**================= our-doctors start ===================*/
+.our-doctors {
+	padding: 60px 0;
+}
+.our-doctors__box {
+	width: 65%;
+	position: relative;
+	padding-top: 13px;
+}
+.our-doctors .button {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -859,33 +891,7 @@ button {
 	color: var(--theme-color-2);
 	text-decoration: underline;
 }
-.about__time {
-	width: 30%;
-	padding-left: 6%;
-}
-.about__time-lists {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-.about__time-lists dt {
-	width: 50%;
-	color: var(--theme-color-5);
-}
-.about__time-lists dd {
-	width: 50%;
-	text-align: right;
-}
-.about__time-lists dt,
-.about__time-lists dd {
-	padding-bottom: 12px;
-	border-bottom: 1px solid var(--theme-color-7);
-}
-.about__time-lists dt:nth-of-type(n + 2),
-.about__time-lists dd:nth-of-type(n + 2) {
-	padding-top: 12px;
-}
-/**================= about end ===================*/
+/**================= our-doctors end ===================*/
 /**================= services start ===================*/
 .services {
 	padding: 60px 0 85px;
@@ -1504,9 +1510,6 @@ button {
 	.box-slide {
 		font-size: 12px;
 	}
-	.about__hos .link-more {
-		margin-bottom: 113px;
-	}
 	.services {
 		padding-bottom: 55px;
 	}
@@ -1527,11 +1530,14 @@ button {
 	.header__sub-logo {
 		display: none;
 	}
+	.our-doctors {
+		padding: 40px 0;
+	}
+	.about {
+		padding: 60px 0 40px;
+	}
 	.to-hosp__cont {
 		padding: 40px;
-	}
-	.about__hos .link-more {
-		margin-bottom: 90px;
 	}
 	.services {
 		padding: 40px 0;
