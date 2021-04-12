@@ -1606,6 +1606,21 @@ button {
 	.container {
 		max-width: 720px;
 	}
+	.header__menu {
+		min-height: 65px;
+	}
+	.menu__link {
+		padding: 0 12px;
+	}
+	.lang-container {
+		margin-right: 15px;
+	}
+	.header__search {
+		margin-right: 10px;
+	}
+	.nav-right-btn {
+		margin-right: 18px;
+	}
 }
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
