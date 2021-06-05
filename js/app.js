@@ -1,7 +1,7 @@
 burgerBtn.onclick = () =>
 	!burgerMenu.classList.contains("active")
 		? burgerMenu.classList.add("active")
-		: burgerMenu.classList.remove("active");
+		: burgerMenu.classList.remove("active")
 
 // window.onscroll = function showHeader() {
 // 	let header = document.querySelector("#burgerMenu");
@@ -15,8 +15,8 @@ burgerBtn.onclick = () =>
 // 	}
 // };
 
-contSubBtn.onclick = () => contSubMenu.classList.add("active");
-consSubClose.onclick = () => contSubMenu.classList.remove("active");
+contSubBtn.onclick = () => contSubMenu.classList.add("active")
+consSubClose.onclick = () => contSubMenu.classList.remove("active")
 
 /*================= photo__slider start =================*/
 const galleryThumbs = new Swiper(".gallery-bottom", {
@@ -30,7 +30,7 @@ const galleryThumbs = new Swiper(".gallery-bottom", {
 	},
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
-});
+})
 const galleryTop = new Swiper(".gallery-top", {
 	slidesPerView: 1,
 	centeredSlides: true,
@@ -42,11 +42,11 @@ const galleryTop = new Swiper(".gallery-top", {
 	thumbs: {
 		swiper: galleryThumbs,
 	},
-});
+})
 /*================= photo__slider end =================*/
 /*================= services slider start =================*/
 const servises = new Swiper(".services__slider-container", {
-	slidesPerView: 4,
+	slidesPerView: 3,
 	spaceBetween: 30,
 	loop: true,
 	navigation: {
@@ -56,18 +56,18 @@ const servises = new Swiper(".services__slider-container", {
 	autoplay: {
 		delay: 5000,
 	},
-	// breakpoints: {
-	// 	// when window width is >= 320px
-	// 	1600: {
-	// 		slidesPerView: 4,
-	// 		spaceBetween: 30,
-	// 	},
-	// },
-});
+	breakpoints: {
+		// when window width is >= 320px
+		992: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+})
 /*================= services slider end =================*/
 /*================= doctors slider start =================*/
 const doctors = new Swiper(".doctors__slider-container", {
-	slidesPerView: 4,
+	slidesPerView: 2,
 	spaceBetween: 30,
 	loop: true,
 	navigation: {
@@ -80,17 +80,7 @@ const doctors = new Swiper(".doctors__slider-container", {
 			slidesPerView: 2,
 			spaceBetween: 20,
 		},
-		// when window width is >= 480px
-		// 480: {
-		//   slidesPerView: 3,
-		//   spaceBetween: 30
-		// },
-		// // when window width is >= 640px
-		640: {
-			slidesPerView: 3,
-			spaceBetween: 40,
-		},
-		1600: {
+		992: {
 			slidesPerView: 4,
 			spaceBetween: 30,
 		},
@@ -100,5 +90,5 @@ const doctors = new Swiper(".doctors__slider-container", {
 	// autoplay: {
 	// 	delay: 5000,
 	// },
-});
+})
 /*================= doctors slider end =================*/

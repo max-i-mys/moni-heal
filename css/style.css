@@ -1157,7 +1157,7 @@ button {
 }
 .commits__photo {
 	height: 100px;
-	width: auto;
+	width: 100px;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 2px solid var(--theme-color-3);
@@ -1601,6 +1601,10 @@ button {
 		margin-right: 150px;
 	}
 }
+.sliderBtn {
+	width: 55px;
+	height: 55px;
+}
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 	.container {
@@ -1621,13 +1625,64 @@ button {
 	.nav-right-btn {
 		margin-right: 18px;
 	}
-}
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-}
-/* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-}
-/* // X-Small devices (iPhone 5/5s/SE, equals to 320px) */
-@media (max-width: 320px) {
+	.crumbs {
+		padding: 25px 0;
+	}
+	.our-doctors__box {
+		width: initial;
+	}
+	.news__box {
+		min-height: 300px;
+	}
+	.apps__img {
+		display: none;
+	}
+	.apps-container {
+		justify-content: initial;
+	}
+	.news {
+		padding-bottom: 50px;
+	}
+	.footer-box__top {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	.footer__bottom-link img {
+		width: 150px;
+	}
+	.commits__head {
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0;
+	}
+	.commits__photo {
+		margin-right: 0;
+	}
+	.commits__head h4 {
+		text-align: center;
+	}
+	.commits__desk::before {
+		top: -15px;
+		left: 50%;
+		transform: rotate(45deg) translateY(50%);
+	}
+	.commits__head {
+		padding-right: 0;
+	}
+	.commits__desk {
+		padding: 15px 20px;
+	}
+	.commits__desk p {
+		font-size: 2.1rem;
+		-webkit-line-clamp: 5;
+	}
+	/* // Small devices (landscape phones, less than 768px) */
+	@media (max-width: 767.98px) {
+	}
+	/* // X-Small devices (portrait phones, less than 576px) */
+	@media (max-width: 575.98px) {
+	}
+	/* // X-Small devices (iPhone 5/5s/SE, equals to 320px) */
+	@media (max-width: 320px) {
+	}
 }
