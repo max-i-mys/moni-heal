@@ -46,8 +46,8 @@ const galleryTop = new Swiper(".gallery-top", {
 /*================= photo__slider end =================*/
 /*================= services slider start =================*/
 const servises = new Swiper(".services__slider-container", {
-	slidesPerView: 3,
-	spaceBetween: 30,
+	slidesPerView: 2,
+	spaceBetween: 20,
 	loop: true,
 	navigation: {
 		nextEl: ".servicesBtn-next",
@@ -57,7 +57,9 @@ const servises = new Swiper(".services__slider-container", {
 		delay: 5000,
 	},
 	breakpoints: {
-		// when window width is >= 320px
+		690: {
+			slidesPerView: 3,
+		},
 		992: {
 			slidesPerView: 4,
 			spaceBetween: 30,
@@ -67,7 +69,7 @@ const servises = new Swiper(".services__slider-container", {
 /*================= services slider end =================*/
 /*================= doctors slider start =================*/
 const doctors = new Swiper(".doctors__slider-container", {
-	slidesPerView: 2,
+	slidesPerView: 1,
 	spaceBetween: 30,
 	loop: true,
 	navigation: {
@@ -75,8 +77,7 @@ const doctors = new Swiper(".doctors__slider-container", {
 		prevEl: ".doctorsBtn-prev",
 	},
 	breakpoints: {
-		// when window width is >= 320px
-		320: {
+		593: {
 			slidesPerView: 2,
 			spaceBetween: 20,
 		},
