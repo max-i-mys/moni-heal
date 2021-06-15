@@ -978,7 +978,7 @@ button {
 	margin-bottom: 0;
 }
 .doctors__slider-container .box-slide {
-	padding: 30px 0;
+	padding: 20px 0;
 	height: 300px;
 	overflow: hidden;
 	background-color: var(--light);
@@ -1769,6 +1769,7 @@ button {
 		}
 		.sub-cont.active {
 			transform: scaleY(1) translateX(-50%);
+			z-index: 1;
 		}
 		.info__blocks.album,
 		.info__blocks.map {
@@ -1819,7 +1820,29 @@ button {
 		.news .link-more {
 			margin-top: 10px;
 		}
+		.apps {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
+	@media (max-width: 685.98px) {
+		.apps__load {
+			position: initial;
+		}
+		.apps-container {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.apps__titles {
+			margin-bottom: 10px;
+			font-size: 2.4rem;
+		}
+		.apps {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
 	/* // X-Small devices (portrait phones, less than 576px) */
 	@media (max-width: 575.98px) {
 	}
