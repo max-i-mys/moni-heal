@@ -1842,7 +1842,54 @@ button {
 			padding-bottom: 20px;
 		}
 	}
-
+	@media (max-width: 655.98px) {
+		.footer-box__top {
+			flex-wrap: wrap;
+		}
+		.footer-box__menu {
+			width: 100%;
+			order: 1;
+			margin-bottom: 15px;
+		}
+		.footer-box__about {
+			width: 50%;
+			order: 2;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.footer-box__soc {
+			width: 50%;
+			order: 3;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.footer__sections {
+			padding-left: 0;
+		}
+		.footer__sec-lists {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0 10px;
+		}
+		.footer__sec-link::before {
+			display: none;
+		}
+		.footer__sec-lists li:nth-last-of-type(n + 2) {
+			margin-bottom: 0;
+		}
+		.footer__sec-lists li:nth-of-type(n + 2) {
+			margin-left: 15px;
+		}
+		.footer-box .titles {
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		.footer-box__top {
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
+	}
 	/* // X-Small devices (portrait phones, less than 576px) */
 	@media (max-width: 575.98px) {
 	}
